@@ -22,7 +22,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value="/")
 	public String getResponse() {
-		return " Welcome to Rest API assignment ";
+		return " Welcome to Employee Rest API Project ";
 
 	}
 	
