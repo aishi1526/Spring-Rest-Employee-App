@@ -61,7 +61,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value="remove/{id}", method=RequestMethod.DELETE)
 	public boolean removeEmployeeRecord(@PathVariable Integer id)
-	{
+	{   System.out.println(:This is rmove record");
 		boolean exits =dao.existsById(id);
 		if(exits == false)
 			throw new RuntimeException("the account record not deleted" );
