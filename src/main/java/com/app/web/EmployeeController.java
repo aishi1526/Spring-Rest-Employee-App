@@ -30,7 +30,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value="/all")
 	public List<Employee> readAllRecords() {
-		System.out.println("\n *** the DAO impl class is " + dao.getClass().getName());
+		System.out.println("\n *** the DAO employee impl class is  " + dao.getClass().getName());
 
 		List<Employee> empList = (List<Employee>) dao.findAll();
 		return empList;
