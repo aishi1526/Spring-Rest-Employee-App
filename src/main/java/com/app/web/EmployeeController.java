@@ -40,7 +40,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value="/add" , method=RequestMethod.POST, consumes={"application/json"})
 	public Employee addNewEmployee(@RequestBody Employee newEmp) {
-		
+		System.out.println("Add employee");
 		Employee saveObj=dao.save(newEmp);
 		
 		return saveObj;
