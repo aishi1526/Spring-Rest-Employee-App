@@ -12,7 +12,7 @@ import com.app.dao.EmployeeDAO;
 import com.app.model.Employee;
 
 @RestController
-@RequestMapping(value = "/employee")
+@RequestMapping(value = "/Employee")
 public class EmployeeController {
 	
 	@Autowired
