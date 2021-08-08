@@ -22,7 +22,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value="/")
 	public String getResponse() {
-		return " Welcome to Employee Rest API Project ";
+		return " Welcome to Employee Rest API Project  new";
 
 	}
 	
@@ -40,7 +40,7 @@ public class EmployeeController {
 	
 	@RequestMapping(value="/add" , method=RequestMethod.POST, consumes={"application/json"})
 	public Employee addNewEmployee(@RequestBody Employee newEmp) {
-		System.out.println("Add employee");
+		System.out.println("Add employee record");
 		Employee saveObj=dao.save(newEmp);
 		
 		return saveObj;
